@@ -18,7 +18,7 @@ os.environ["HUGGING_FACE_HUB_TOKEN"] = HUGGING_FACE_TOKEN
 # Load the summarization and text generation models
 try:
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-    text_generator = pipeline("text-generation", model="gpt2")
+   
 except Exception as e:
     st.error(f"Error loading models: {e}")
 
